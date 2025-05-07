@@ -1,0 +1,36 @@
+Listado de rutas de carpetas
+El n£mero de serie del volumen es C2D7-9C5E
+C:.
+|   .gitattributes
+|   .gitignore
+|   estructura.txt
+|   HELP.md
+|   mvnw
+|   mvnw.cmd
+|   pom.xml
+|   README.md
+|   
++---.mvn
+|   \---wrapper
+|           maven-wrapper.properties
+|           
+\---src
+    +---main
+    |   +---java
+    |   |   \---com
+    |   |       \---example
+    |   |           \---user_management
+    |   |                   UserManagementApplication.java
+    |   |                   
+    |   \---resources
+    |       |   application.properties
+    |       |   
+    |       +---static
+    |       \---templates
+    \---test
+        \---java
+            \---com
+                \---example
+                    \---user_management
+                            UserManagementApplicationTests.java
+                            
