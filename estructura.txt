@@ -3,6 +3,7 @@ El n£mero de serie del volumen es C2D7-9C5E
 C:.
 |   .gitattributes
 |   .gitignore
+|   docker-compose.yml
 |   estructura.txt
 |   HELP.md
 |   mvnw
@@ -10,27 +11,59 @@ C:.
 |   pom.xml
 |   README.md
 |   
++---.idea
+|   |   .gitignore
+|   |   compiler.xml
+|   |   encodings.xml
+|   |   jarRepositories.xml
+|   |   misc.xml
+|   |   vcs.xml
+|   |   workspace.xml
+|   |   
+|   \---inspectionProfiles
+|           Project_Default.xml
+|           
 +---.mvn
 |   \---wrapper
 |           maven-wrapper.properties
 |           
-\---src
-    +---main
-    |   +---java
-    |   |   \---com
-    |   |       \---example
-    |   |           \---user_management
-    |   |                   UserManagementApplication.java
-    |   |                   
-    |   \---resources
-    |       |   application.properties
-    |       |   
-    |       +---static
-    |       \---templates
-    \---test
-        \---java
-            \---com
-                \---example
-                    \---user_management
-                            UserManagementApplicationTests.java
-                            
++---src
+|   +---main
+|   |   +---java
+|   |   |   \---com
+|   |   |       \---example
+|   |   |           \---user_management
+|   |   |               |   UserManagementApplication.java
+|   |   |               |   
+|   |   |               +---model
+|   |   |               |       User.java
+|   |   |               |       
+|   |   |               \---repository
+|   |   |                       UserRepository.java
+|   |   |                       
+|   |   \---resources
+|   |       |   application.properties
+|   |       |   
+|   |       +---static
+|   |       \---templates
+|   \---test
+|       \---java
+|           \---com
+|               \---example
+|                   \---user_management
+|                           UserManagementApplicationTests.java
+|                           
+\---target
+    +---classes
+    |   |   application.properties
+    |   |   
+    |   \---com
+    |       \---example
+    |           \---user_management
+    |               |   UserManagementApplication.class
+    |               |   
+    |               \---model
+    |                       User.class
+    |                       
+    \---generated-sources
+        \---annotations
