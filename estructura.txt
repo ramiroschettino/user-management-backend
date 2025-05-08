@@ -1,9 +1,9 @@
-Listado de rutas de carpetas para el volumen Windows
-El número de serie del volumen es B824-833F
+Listado de rutas de carpetas
 C:.
 |   .gitattributes
 |   .gitignore
 |   docker-compose.yml
+|   Dockerfile
 |   estructura.txt
 |   mvnw
 |   mvnw.cmd
@@ -11,88 +11,47 @@ C:.
 |   README.md
 |   
 +---.idea
-|       .gitignore
-|       compiler.xml
-|       encodings.xml
-|       jarRepositories.xml
-|       misc.xml
-|       vcs.xml
-|       workspace.xml
-|       
+|   |   .gitignore
+|   |   compiler.xml
+|   |   encodings.xml
+|   |   jarRepositories.xml
+|   |   misc.xml
+|   |   vcs.xml
+|   |   
+|   \---inspectionProfiles
+|           Project_Default.xml
+|           
 +---.mvn
 |   \---wrapper
 |           maven-wrapper.properties
 |           
-+---src
-|   +---main
-|   |   +---java
-|   |   |   \---com
-|   |   |       \---example
-|   |   |           \---user_management
-|   |   |               |   UserManagementApplication.java
-|   |   |               |   
-|   |   |               +---controller
-|   |   |               |       UserController.java
-|   |   |               |       
-|   |   |               +---model
-|   |   |               |       User.java
-|   |   |               |       
-|   |   |               +---repository
-|   |   |               |       UserRepository.java
-|   |   |               |       
-|   |   |               \---service
-|   |   |                       UserService.java
-|   |   |                       
-|   |   \---resources
-|   |           application.properties
-|   |           
-|   \---test
-|       \---java
-|           \---com
-|               \---example
-|                   \---user_management
-|                           UserManagementApplicationTests.java
-|                           
-\---target
-    +---classes
-    |   |   application.properties
-    |   |   
-    |   \---com
-    |       \---example
-    |           \---user_management
-    |               |   UserManagementApplication.class
-    |               |   
-    |               +---controller
-    |               |       UserController.class
-    |               |       
-    |               +---model
-    |               |       User.class
-    |               |       
-    |               +---repository
-    |               |       UserRepository.class
-    |               |       
-    |               \---service
-    |                       UserService.class
-    |                       
-    +---generated-sources
-    |   \---annotations
-    +---generated-test-sources
-    |   \---test-annotations
-    +---maven-status
-    |   \---maven-compiler-plugin
-    |       +---compile
-    |       |   \---default-compile
-    |       |           createdFiles.lst
-    |       |           inputFiles.lst
-    |       |           
-    |       \---testCompile
-    |           \---default-testCompile
-    |                   createdFiles.lst
-    |                   inputFiles.lst
-    |                   
-    \---test-classes
-        \---com
-            \---example
-                \---user_management
-                        UserManagementApplicationTests.class
-                        
+\---src
+    +---main
+    |   +---java
+    |   |   \---com
+    |   |       \---example
+    |   |           \---user_management
+    |   |               |   UserManagementApplication.java
+    |   |               |   
+    |   |               +---controller
+    |   |               |       UserController.java
+    |   |               |       
+    |   |               +---model
+    |   |               |       User.java
+    |   |               |       
+    |   |               +---repository
+    |   |               |       UserRepository.java
+    |   |               |       
+    |   |               \---service
+    |   |                       UserService.java
+    |   |                       
+    |   \---resources
+    |           application.properties
+    |           
+    \---test
+        \---java
+            \---com
+                \---example
+                    \---user_management
+                            UserManagementApplicationTests.java
+                            
