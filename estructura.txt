@@ -1,28 +1,24 @@
-Listado de rutas de carpetas
-El n£mero de serie del volumen es C2D7-9C5E
+Listado de rutas de carpetas para el volumen Windows
+El número de serie del volumen es B824-833F
 C:.
 |   .gitattributes
 |   .gitignore
 |   docker-compose.yml
 |   estructura.txt
-|   HELP.md
 |   mvnw
 |   mvnw.cmd
 |   pom.xml
 |   README.md
 |   
 +---.idea
-|   |   .gitignore
-|   |   compiler.xml
-|   |   encodings.xml
-|   |   jarRepositories.xml
-|   |   misc.xml
-|   |   vcs.xml
-|   |   workspace.xml
-|   |   
-|   \---inspectionProfiles
-|           Project_Default.xml
-|           
+|       .gitignore
+|       compiler.xml
+|       encodings.xml
+|       jarRepositories.xml
+|       misc.xml
+|       vcs.xml
+|       workspace.xml
+|       
 +---.mvn
 |   \---wrapper
 |           maven-wrapper.properties
@@ -35,17 +31,21 @@ C:.
 |   |   |           \---user_management
 |   |   |               |   UserManagementApplication.java
 |   |   |               |   
+|   |   |               +---controller
+|   |   |               |       UserController.java
+|   |   |               |       
 |   |   |               +---model
 |   |   |               |       User.java
 |   |   |               |       
-|   |   |               \---repository
-|   |   |                       UserRepository.java
+|   |   |               +---repository
+|   |   |               |       UserRepository.java
+|   |   |               |       
+|   |   |               \---service
+|   |   |                       UserService.java
 |   |   |                       
 |   |   \---resources
-|   |       |   application.properties
-|   |       |   
-|   |       +---static
-|   |       \---templates
+|   |           application.properties
+|   |           
 |   \---test
 |       \---java
 |           \---com
@@ -62,8 +62,37 @@ C:.
     |           \---user_management
     |               |   UserManagementApplication.class
     |               |   
-    |               \---model
-    |                       User.class
+    |               +---controller
+    |               |       UserController.class
+    |               |       
+    |               +---model
+    |               |       User.class
+    |               |       
+    |               +---repository
+    |               |       UserRepository.class
+    |               |       
+    |               \---service
+    |                       UserService.class
     |                       
-    \---generated-sources
-        \---annotations
+    +---generated-sources
+    |   \---annotations
+    +---generated-test-sources
+    |   \---test-annotations
+    +---maven-status
+    |   \---maven-compiler-plugin
+    |       +---compile
+    |       |   \---default-compile
+    |       |           createdFiles.lst
+    |       |           inputFiles.lst
+    |       |           
+    |       \---testCompile
+    |           \---default-testCompile
+    |                   createdFiles.lst
+    |                   inputFiles.lst
+    |                   
+    \---test-classes
+        \---com
+            \---example
+                \---user_management
+                        UserManagementApplicationTests.class
+                        
